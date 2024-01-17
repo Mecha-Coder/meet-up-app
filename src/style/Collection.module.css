@@ -10,24 +10,3 @@
   flex-direction: column;
   gap: 10px;
 }
-
-.action{
-  display: flex;
-  justify-content: center;
-  padding: 20px; 
-}
-
-.button{
-  background-color: brown;
-  color: white;
-  width: 200px;
-  padding: 12px;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.button:hover{
-  opacity: 0.8;
-}

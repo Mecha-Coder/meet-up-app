@@ -1,0 +1,9 @@
+.layout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 70px;
+  padding: 40px;
+  gap: 30px;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from "../design/Card"
+import Button from "../components/Button"
 import $ from "../style/Collection.module.css" 
 
 function Item({data}) {
@@ -15,9 +16,7 @@ function Item({data}) {
         <p>{description}</p>
       </div>
 
-      <div className={$.action}>
-        <button className={$.button}>To Favourites</button>
-      </div>
+      <Button name="To Favourites" />
 
     </Card>
   )

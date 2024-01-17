@@ -1,12 +1,17 @@
-import React from 'react'
-import { DATA } from "../asset/data"
+import React, {useContext} from 'react'
+import { dataContext } from "./App"
 import Collection from "../components/Collection"
-
+import List from "../design/List"
 
 function All() {
+  const {data} = useContext(dataContext)
+
   return (
     <>
-      {DATA.map(item=><Collection key={item.id} data={item}/>)}
+      <h1>All Meetup Location</h1>
+      <List>
+        {data.map(item=><Collection key={item.id} data={item}/>)}
+      </List>
     </>
   )
 }
